@@ -607,8 +607,8 @@ namespace UnityEditorMCP.Handlers
 
                 case Rigidbody rb:
                     properties["mass"] = rb.mass;
-                    properties["drag"] = rb.linearDamping;
-                    properties["angularDrag"] = rb.angularDamping;
+                    properties["drag"] = rb.drag;
+                    properties["angularDrag"] = rb.angularDrag;
                     properties["useGravity"] = rb.useGravity;
                     properties["isKinematic"] = rb.isKinematic;
                     break;
